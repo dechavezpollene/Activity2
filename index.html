@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Information Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="accenture-form-container">
+    <div class="logo-section">
+      <img src="assets/logo.png" alt="Accenture Logo" class="accenture-logo">
+    </div>
+
+    <h3 class="accenture-form-title">CLIENT INFORMATION FORM</h3>
+
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:
+          <input type="text" id="fullname" name="fullname" required>
+        </label>
+        <label for="company">Company/Organization (if any):
+          <input type="text" id="company" name="company">
+        </label>
+        <label for="position">Position/Role:
+          <input type="text" id="position" name="position">
+        </label>
+        <label for="email">Email Address:
+          <input type="email" id="email" name="email" required>
+        </label>
+        <label for="phone">Phone Number:
+          <input type="text" id="phone" name="phone">
+        </label>
+          <fieldset>
+        <label>Preferred Method of Contact:</label>
+        <div class="accenture-checkbox-group">
+          <label><input type="checkbox" name="contact" value="email"> Email</label>
+          <label><input type="checkbox" name="contact" value="phone"> Phone</label>
+          <label><input type="checkbox" name="contact" value="messaging"> Messaging App</label>
+        </div>
+      </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend>Project Details</legend>
+        <label for="project">Project Name/Title:
+          <input type="text" id="project" name="project">
+        </label>
+
+        <fieldset>
+          <legend>Type of Service Required:</legend>
+          
+          <div class="accenture-checkbox-group">
+            <label><input type="checkbox" name="service" value="web Dev"> Web Development</label>
+            <label><input type="checkbox" name="service" value="graphic"> Graphic Design</label>
+            <label><input type="checkbox" name="service" value="branding"> Branding</label>
+            <label><input type="checkbox" name="service" value="marketing"> Marketing</label>
+          </div>
+        </fieldset>
+
+        <label for="description">Brief Description of the Project:
+          <textarea id="description" name="description" rows="3"></textarea>
+        </label>
+        <label for="audience">Target Audience:
+          <input type="text" id="audience" name="audience">
+        </label>
+        <label for="deadline">Deadline (if any):
+          <input type="date" id="deadline" name="deadline" placeholder="dd/mm/yyyy">
+        </label>
+        <label>Budget Range:</label>
+        <div class="accenture-checkbox-group">
+          <label><input type="radio" name="budget" value="below10k"> Below ₱10,000</label>
+          <label><input type="radio" name="budget" value="10kto30k"> ₱10,000–₱30,000</label>
+          <label><input type="radio" name="budget" value="50kplus"> ₱50,000+</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>File & Content Provision</legend>
+
+        <label>Will you provide content (text, images, etc)?</label>
+        <div class="accenture-checkbox-group">
+          <label><input type="radio" name="content" value="yes"> Yes</label>
+          <label><input type="radio" name="content" value="no"> No</label>
+          <label><input type="radio" name="content" value="partial"> Partially</label>
+        </div>
+        <label>Do you have brand assets (logo, colors, fonts)?</label>
+        <div class="accenture-checkbox-group">
+          <label><input type="radio" name="assets" value="yes"> Yes</label>
+          <label><input type="radio" name="assets" value="developing"> Still in development</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Approvals & Follow-ups</legend>
+
+        <label for="approver">Who will approve designs/decisions on your side?
+          <input type="text" id="approver" name="approver">
+        </label>
+        <label>How often do you prefer updates?</label>
+        <div class="accenture-checkbox-group">
+          <label><input type="radio" name="updates" value="daily"> Daily</label>
+          <label><input type="radio" name="updates" value="weekly"> Weekly</label>
+          <label><input type="radio" name="updates" value="milestones"> At key milestones only</label>
+        </div>
+      </fieldset>
+      <fieldset>
+       
+       <legend>Signature (if printed)</legend>
+        <div class="signature-box">
+          <div class="signature-line"></div>
+          <div class="signature-label"><em>SIGNATURE OVER PRINTED NAME</em></div>
+        </div>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+          <button type="submit" class="accenture-submit-btn">Submit</button>
+      </fieldset>
+
+    
+    </form>
+  </div>
+</body>
+</html>
