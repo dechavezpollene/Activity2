@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,40 +17,46 @@
     <form>
       <fieldset>
         <legend>Personal Information</legend>
-        <label for="fullname">Full Name:
-          <input type="text" id="fullname" name="fullname" required>
-        </label>
-        <label for="company">Company/Organization (if any):
-          <input type="text" id="company" name="company">
-        </label>
-        <label for="position">Position/Role:
-          <input type="text" id="position" name="position">
-        </label>
-        <label for="email">Email Address:
-          <input type="email" id="email" name="email" required>
-        </label>
-        <label for="phone">Phone Number:
-          <input type="text" id="phone" name="phone">
-        </label>
-          <fieldset>
-        <label>Preferred Method of Contact:</label>
-        <div class="accenture-checkbox-group">
-          <label><input type="checkbox" name="contact" value="email"> Email</label>
-          <label><input type="checkbox" name="contact" value="phone"> Phone</label>
-          <label><input type="checkbox" name="contact" value="messaging"> Messaging App</label>
-        </div>
-      </fieldset>
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+
+        <label for="middlename">Middle Name:</label>
+        <input type="text" id="middlename" name="middlename">
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+
+        <label for="company">Company/Organization (if any):</label>
+        <input type="text" id="company" name="company">
+
+        <label for="position">Position/Role:</label>
+        <input type="text" id="position" name="position">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone">
+
+        <fieldset>
+          <legend>Preferred Method of Contact:</legend>
+          <div class="accenture-checkbox-group">
+            <label><input type="checkbox" name="contact" value="email"> Email</label>
+            <label><input type="checkbox" name="contact" value="phone"> Phone</label>
+            <label><input type="checkbox" name="contact" value="messaging"> Messaging App</label>
+          </div>
+        </fieldset>
       </fieldset>
 
       <fieldset>
         <legend>Project Details</legend>
-        <label for="project">Project Name/Title:
-          <input type="text" id="project" name="project">
-        </label>
+
+        <label for="project">Project Name/Title:</label>
+        <input type="text" id="project" name="project">
 
         <fieldset>
           <legend>Type of Service Required:</legend>
-          
           <div class="accenture-checkbox-group">
             <label><input type="checkbox" name="service" value="web Dev"> Web Development</label>
             <label><input type="checkbox" name="service" value="graphic"> Graphic Design</label>
@@ -59,15 +65,15 @@
           </div>
         </fieldset>
 
-        <label for="description">Brief Description of the Project:
-          <textarea id="description" name="description" rows="3"></textarea>
-        </label>
-        <label for="audience">Target Audience:
-          <input type="text" id="audience" name="audience">
-        </label>
-        <label for="deadline">Deadline (if any):
-          <input type="date" id="deadline" name="deadline" placeholder="dd/mm/yyyy">
-        </label>
+        <label for="description">Brief Description of the Project:</label>
+        <textarea id="description" name="description" rows="3"></textarea>
+
+        <label for="audience">Target Audience:</label>
+        <input type="text" id="audience" name="audience">
+
+        <label for="deadline">Deadline (if any):</label>
+        <input type="date" id="deadline" name="deadline">
+
         <label>Budget Range:</label>
         <div class="accenture-checkbox-group">
           <label><input type="radio" name="budget" value="below10k"> Below ₱10,000</label>
@@ -85,6 +91,7 @@
           <label><input type="radio" name="content" value="no"> No</label>
           <label><input type="radio" name="content" value="partial"> Partially</label>
         </div>
+
         <label>Do you have brand assets (logo, colors, fonts)?</label>
         <div class="accenture-checkbox-group">
           <label><input type="radio" name="assets" value="yes"> Yes</label>
@@ -95,9 +102,9 @@
       <fieldset>
         <legend>Approvals & Follow-ups</legend>
 
-        <label for="approver">Who will approve designs/decisions on your side?
-          <input type="text" id="approver" name="approver">
-        </label>
+        <label for="approver">Who will approve designs/decisions on your side?</label>
+        <input type="text" id="approver" name="approver">
+
         <label>How often do you prefer updates?</label>
         <div class="accenture-checkbox-group">
           <label><input type="radio" name="updates" value="daily"> Daily</label>
@@ -105,9 +112,10 @@
           <label><input type="radio" name="updates" value="milestones"> At key milestones only</label>
         </div>
       </fieldset>
+
       <fieldset>
-       
-       <legend>Signature (if printed)</legend>
+        <legend>Signature (if printed)</legend>
+
         <div class="signature-box">
           <div class="signature-line"></div>
           <div class="signature-label"><em>SIGNATURE OVER PRINTED NAME</em></div>
@@ -115,10 +123,9 @@
 
         <label for="date">Date:</label>
         <input type="date" id="date" name="date">
-          <button type="submit" class="accenture-submit-btn">Submit</button>
-      </fieldset>
 
-    
+        <button type="submit" class="accenture-submit-btn">Submit</button>
+      </fieldset>
     </form>
   </div>
 </body>
